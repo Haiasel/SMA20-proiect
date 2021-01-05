@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ddb9eb">
+
+    <EditText
+        android:id="@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="Type Event"
+        android:inputType="textShortMessage" />
+    <EditText
+        android:id="@+id/emailname"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textShortMessage" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/timeicon"
+            android:layout_margin= "10dp"
+            android:id="@+id/seteventtime"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00 AM"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/eventtime"
+            android:layout_margin="10dp"
+            android:layout_weight="2"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm me"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:id="@+id/alarmme"
+            android:layout_weight="1">
+        </CheckBox>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:text="Add Event"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>
